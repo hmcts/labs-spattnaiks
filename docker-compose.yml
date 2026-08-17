@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  SPattnaikS:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    image: hmctsprod.azurecr.io/labs/SPattnaikS
+    ports:
+      - $SERVER_PORT:$SERVER_PORT
