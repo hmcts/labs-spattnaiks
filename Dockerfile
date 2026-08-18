@@ -6,7 +6,7 @@ ARG PLATFORM=""
 FROM hmctsprod.azurecr.io/base/java${PLATFORM}:21-distroless
 
 COPY lib/applicationinsights.json /opt/app/
-COPY build/libs/labs-spattnaiks.jar /opt/app/
+COPY build/libs/labs-SPattnaikS.jar /opt/app/
 
 EXPOSE 8080
-CMD [ "labs-spattnaiks.jar" ]
+CMD [ "labs-SPattnaikS.jar" ]
