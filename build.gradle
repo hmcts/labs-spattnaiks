@@ -15,7 +15,7 @@ version = '0.0.1'
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(21)
+    languageVersion = JavaLanguageVersion.of(25)
   }
 }
 
@@ -106,7 +106,7 @@ checkstyle {
 }
 
 pmd {
-  toolVersion = "7.8.0"
+  toolVersion = "7.16.0"
   sourceSets = [sourceSets.main, sourceSets.test, sourceSets.functionalTest, sourceSets.integrationTest, sourceSets.smokeTest]
   reportsDir = file("$project.buildDir/reports/pmd")
   // https://github.com/pmd/pmd/issues/876
@@ -127,8 +127,8 @@ project.tasks['sonarqube'].dependsOn test, integration, jacocoTestReport
 
 sonarqube {
   properties {
-    property "sonar.projectName", "HMCTS :: labs-SPattnaikS"
-    property "sonar.projectKey", "com.github.hmcts:labs-SPattnaikS"
+    property "sonar.projectName", "HMCTS :: labs-spattnaiks"
+    property "sonar.projectKey", "com.github.hmcts:labs-spattnaiks"
     property "sonar.exclusions", ["**/config/**", "**/controllers/**"]
   }
 }
@@ -190,7 +190,9 @@ dependencyManagement {
 repositories {
   mavenLocal()
   mavenCentral()
-  maven { url 'https://jitpack.io' }
+  maven {
+    url = uri("https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1")
+  }
 }
 
 dependencies {
@@ -215,11 +217,13 @@ dependencies {
   }
 }
 
-mainClassName = 'uk.gov.hmcts.labs.SPattnaikS.Application'
+application {
+  mainClass = 'uk.gov.hmcts.labs.spattnaiks.Application'
+}
 
 bootJar {
   getArchiveFileName().set(provider {
-    'labs-SPattnaikS.jar'
+    'labs-spattnaiks.jar'
   })
 
   manifest {

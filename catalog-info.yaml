@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "labs-SPattnaikS"
+  name: "labs-spattnaiks"
   description: Deploying a Java application
   annotations:
     # This must match folder-name/job-name in Jenkins.
-    jenkins.io/job-full-name: cft:HMCTS_labs/labs-SPattnaikS
-    github.com/project-slug: 'hmcts/labs-SPattnaikS'
+    jenkins.io/job-full-name: cft:HMCTS_labs/labs-spattnaiks
+    github.com/project-slug: 'hmcts/labs-spattnaiks'
   tags:
     - java
   links:

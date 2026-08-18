@@ -1,7 +1,7 @@
 {
   "connectionString": "${file:/mnt/secrets/labs/app-insights-connection-string}",
   "role": {
-    "name": "labs-SPattnaikS"
+    "name": "labs-spattnaiks"
   },
   "preview": {
     "sampling": {

@@ -1,4 +1,4 @@
-package uk.gov.hmcts.labs.SPattnaikS.controllers;
+package uk.gov.hmcts.labs.spattnaiks.controllers;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -27,6 +27,6 @@ public class RootController {
     @RequestMapping(value = "/", method = GET, produces = TEXT_PLAIN_VALUE)
 
     public ResponseEntity<String> welcome() {
-        return ok("Welcome to labs-SPattnaikS application");
+        return ok("Welcome to labs-spattnaiks application");
     }
 }

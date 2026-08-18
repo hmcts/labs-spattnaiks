@@ -1,4 +1,4 @@
-package uk.gov.hmcts.labs.SPattnaikS;
+package uk.gov.hmcts.labs.spattnaiks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
