@@ -223,7 +223,7 @@ application {
 
 bootJar {
   getArchiveFileName().set(provider {
-    'labs-SPattnaikS.jar'
+    'labs-spattnaiks.jar'
   })
 
   manifest {
