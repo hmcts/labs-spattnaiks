@@ -1,4 +1,4 @@
-package uk.gov.hmcts.labs.SPattnaikS.controllers;
+package uk.gov.hmcts.labs.spattnaiks.controllers;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

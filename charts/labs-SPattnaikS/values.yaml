@@ -1,6 +1,0 @@
-java:
-  applicationPort: 8080
-  image: 'hmctsprod.azurecr.io/labs/SPattnaikS:latest'
-  ingressHost: labs-SPattnaikS-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
-  aadIdentityName: labs
-  environment:

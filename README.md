@@ -1,4 +1,4 @@
-# labs-SPattnaikS
+# labs-spattnaiks
 
 
 The application exposes health endpoints (http://localhost:8080/health) and metrics endpoint
