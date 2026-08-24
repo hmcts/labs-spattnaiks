@@ -1,6 +1,6 @@
 dependencies:
 - name: java
-  repository: oci://hmctsprod.azurecr.io/helm
+  repository: oci://hmctssbox.azurecr.io/helm
   version: 5.3.0
 digest: sha256:11a806367f29f746a40795503cb2ba8ad0103df427a42e9e18da62807ad467a3
 generated: "2026-08-19T11:49:51.879292+01:00"
