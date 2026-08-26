@@ -8,5 +8,5 @@ maintainers:
   - name: HMCTS labs team
 dependencies:
   - name: java
-    version: 5.2.1
+    version: 6.0.0
     repository: 'oci://hmctssbox.azurecr.io/helm'
