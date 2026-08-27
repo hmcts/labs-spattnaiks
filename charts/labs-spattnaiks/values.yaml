@@ -6,8 +6,9 @@ java:
 
   environment: {}
 
-  keyVaults:
-    labs:
-      secrets:
-        - name: app-insights-connection-string
-          alias: app-insights-connection-string
+  # Uncomment after the Key Vault and secret have been provisioned
+  # keyVaults:
+  #   labs:
+  #     secrets:
+  #       - name: app-insights-connection-string
+  #         alias: app-insights-connection-string
