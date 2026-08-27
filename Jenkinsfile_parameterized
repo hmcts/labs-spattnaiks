@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@acr-migration-check-graceful-failure")
 
 def type = "java"
 def product = "labs"
